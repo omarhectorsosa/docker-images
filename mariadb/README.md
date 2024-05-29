@@ -12,22 +12,22 @@ Lo que sigue es un ejemplo en donde se construye la versión v2.2.0 de la imagen
 
 ```bash
 ### Esto es un ejemplo, no olvides modificar la versión a la necesaria
-docker build -t industriaspugliesesa/mariadb-10.2.7:2.2.0 .
+docker build -t ososa2022/mariadb-10.2.7:2.2.0 .
 ```
 > NOTA: La versión v10.2.7 hace referencia a la versión de MariaDB que estamos usando para esta imagen y no a la versión de la imagen en sí.
 
 Alternativamente, se puede asignar la versión mayor relativa. Esto hara que aquellos clientes que soliciten el uso de `industriaspugliesesa/mariadb-10.2.7:2` descarguen la versión `v2.2.0`:
 
 ```bash
-docker tag industriaspugliesesa/mariadb-10.2.7:2.2.0 industriaspugliesesa/mariadb-10.2.7:2
+docker tag ososa2022/mariadb-10.2.7:2.2.0 ososa2022/mariadb-10.2.7:2
 ```
 
 ## Publicación de la imagen
 
-La publicación de la imagen se realiza mediante DockerHub. Para ello es necesario contar con las credenciales asociadas a  `industriaspugliesesa` y realizar el login en consola:
+La publicación de la imagen se realiza mediante DockerHub. Para ello es necesario contar con las credenciales asociadas a  `ososa2022` y realizar el login en consola:
 
 ```bash
-docker login -u industriaspugliesesa
+docker login -u ososa2022
 ```
 
 > Se le solicitará una clave de acceso.
@@ -35,7 +35,7 @@ docker login -u industriaspugliesesa
 Una vez hecho el login se puede realizar el correspondiente push.
 
 ```bash
-docker push industriaspugliesesa/mariadb-10.2.7
+docker push ososa2022/mariadb-10.2.7
 ```
 
 Tras lo cual la nueva versión debería estar disponible.
