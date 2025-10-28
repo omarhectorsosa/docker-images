@@ -52,11 +52,6 @@ echo -e "\n\033[00;44m*** Configurando permisos. ***\033[0m\n"
 
 chown --recursive usuario.www-data vendor/ public/build/ node_modules/ var/
 
-if [ -f my_crontab ]
-then
-  crontab my_crontab
-fi
-
 echo -e "\n\033[00;44m*** INICIANDO SERVIDOR  =) ***\033[0m\n"
 
 exec "$@"
