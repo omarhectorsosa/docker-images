@@ -1,4 +1,4 @@
-ARG php_version=8.1.0-apache
+ARG php_version=8.2-apache
 ARG composer_version=latest-2.2.x
 FROM php:${php_version}
 
@@ -17,7 +17,7 @@ RUN apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && docker-php-ext-configure gd --with-freetype --with-jpeg \
-  && docker-php-ext-install gd zip pdo pdo_mysql
+  && docker-php-ext-install gd zip pdo pdo_mysql mysqli
 
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
