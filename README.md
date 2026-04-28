@@ -85,10 +85,10 @@ f422e32c38af: Pushed
 Ejemplo concreto  creando una imagen y la subo en el docker hub (user:ososa2022 pass:ciroylana2022)
 
 ```bash
-$ docker build -t ososa2022/php-apache-7.2.24:1.0.0 .
-$ docker tag ososa2022/php-apache-7.2.24:1.0.0 ososa2022/mariadb-10.2.7:1.0.0
-$ docker login -u ososa2022
-$ docker push ososa2022/php-apache-7.2.24:1.0.0 
+$ docker build -t ososa2022/php-apache-simple-8.2.24:1.0.0 .
+$ docker tag ososa2022/php-apache-simple-8.2.0:1.0.0 ososa2022/php-apache-simple-8.2.0:1.0.0
+$ docker login -u ososa2022 -p ciroylana2022
+$ docker push ososa2022/php-apache-simple-8.2.0:1.0.0
 $ docker logout
 ```
 

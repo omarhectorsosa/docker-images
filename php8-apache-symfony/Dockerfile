@@ -1,4 +1,4 @@
-ARG php_version=8.1.0-apache
+ARG php_version=8.2.0-apache
 ARG composer_version=latest-2.2.x
 FROM php:${php_version}
 
